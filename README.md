@@ -28,6 +28,19 @@ or add
 
 to the require section of your application's `composer.json` file.
 
+To use bootstrap 4 run
+
+```bash
+$ composer require 2amigos/yii2-date-picker-widget:~2.0
+```
+or add
+
+```json
+"2amigos/yii2-date-picker-widget" : "2.0.*"
+```
+
+to the require section of your application's `composer.json` file.
+
 Usage
 -----
 The widget comes in two flavors: 

@@ -4,9 +4,11 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
+
 namespace dosamigos\datepicker;
 
 use yii\web\AssetBundle;
+use yii\bootstrap4\BootstrapPluginAsset;
 
 /**
  * DatePickerAsset
@@ -21,7 +23,7 @@ class DatePickerAsset extends AssetBundle
     public $sourcePath = '@bower/bootstrap-datepicker/dist';
 
     public $css = [
-        'css/bootstrap-datepicker3.css',
+        'css/bootstrap-datepicker.standalone.css',
     ];
 
     public $js = [
@@ -29,6 +31,6 @@ class DatePickerAsset extends AssetBundle
     ];
 
     public $depends = [
-        'yii\bootstrap\BootstrapPluginAsset'
+        BootstrapPluginAsset::class,
     ];
 }

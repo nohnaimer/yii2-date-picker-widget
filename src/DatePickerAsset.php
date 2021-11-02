@@ -8,7 +8,8 @@
 namespace dosamigos\datepicker;
 
 use yii\web\AssetBundle;
-use yii\bootstrap4\BootstrapPluginAsset;
+use yii\web\JqueryAsset;
+use yii\bootstrap5\BootstrapPluginAsset;
 
 /**
  * DatePickerAsset
@@ -32,5 +33,6 @@ class DatePickerAsset extends AssetBundle
 
     public $depends = [
         BootstrapPluginAsset::class,
+        JqueryAsset::class,
     ];
 }
